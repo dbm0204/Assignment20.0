@@ -1,0 +1,38 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F8FF">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/hnt_et_name" />
+
+    <EditText
+        android:id="@+id/et_mobile_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name"
+        android:inputType="phone"
+        android:hint="@string/hnt_et_mobile_phone" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_btn_add"
+        android:layout_above="@+id/btn_contacts"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_contacts"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_btn_contacts"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
